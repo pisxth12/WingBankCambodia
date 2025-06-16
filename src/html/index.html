@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wing Bank</title>
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/-deHHbwBUh2I4dzTjq9n4ggBGPqJwKzj9pwvPqyaR-hPxzKN9QVJOBsZP_ShlCDmX60" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  </head>
+  <style>
+      body{
+        color: white;
+        font-family: sans-serif;
+      }
+      aside{
+        cursor: pointer;
+      }
+  
+
+  </style>
+  <body>
+    <header class=" bg-wing-primary ">
+      <div class="container max-w-[1024px] mx-auto px-4  header-content h-[50px] flex justify-between lg:justify-end p-2 items-center">
+        <aside class="left block lg:hidden">
+        <figure class="w-[135px] h-[48px]">
+          <img src="../../img/wing_logo.png" alt="">
+        </figure>
+      </aside>
+      <aside class="right flex gap-5 items-center">
+           <ul class=" gap-4 text-white hidden lg:flex">
+              <li><a href="">New</a></li>
+              <li><a href="">Promotion</a></li>
+              <li><a href="">Carrer</a></li>
+              <li><a href=""></a>About</li>
+              <li><a href="">CSR</a></li>
+           </ul>
+
+           <!-- search-bar -->
+           <div class="search-bar hidden lg:block">
+            <div class="search-content group bg-white  rounded-md overflow-hidden flex items-center transition-all duration-300 p-1">
+              <input class="bg-transparent outline-none  w-0 group-hover:w-[150px] transition-all duration-300 text-slate-600" type="text" placeholder="Search">
+              <i class="bi bi-search text-black p-1 rounded-md cursor-pointer"></i>
+            </div>
+          </div>
+
+          <!-- langues -->
+          <div class="khmer bg-white px-1 rounded-md h-[24px] flex items-center gap-1 py-4">
+            <div class="khmer-flag ">
+              <figure class="w-[20px] h-[13px]"><img  src="../../img/km-icon.png" alt=""></figure>
+            </div>
+            <div class="khmer-letter text-wing-blue">
+              ខ្មែរ
+            </div>
+          </div>
+
+          <!-- .internet banking -->
+           <div class="internet_btn bg-wing-blue rounded-md overflow-hidden">
+               <button class=" p-1   hover:bg-wing-blueSlate "><a class=" p-3" href="">Internet Banking</a></button>
+           </div>
+
+          <!-- list bar  -->
+           <div class="minu_bar block lg:hidden">
+               <i class="bi bi-list text-3xl"></i>
+           </div>
+
+      </aside>
+      </div>
+    </header>
+  </body>
+</html>

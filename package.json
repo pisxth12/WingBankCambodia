@@ -1,0 +1,23 @@
+{
+  "name": "howto-install-tailwind",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wing": "tailwind -i ./src/css/tailwind.css -o ./src/css/style.css --watch"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.5",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "postcss-nesting": "^13.0.2"
+  }
+}
