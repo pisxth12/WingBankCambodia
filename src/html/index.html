@@ -6,8 +6,14 @@
     <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/-deHHbwBUh2I4dzTjq9n4ggBGPqJwKzj9pwvPqyaR-hPxzKN9QVJOBsZP_ShlCDmX60" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
   </head>
   <style>
+    a{
+      text-decoration: none;
+    }
       body{
         color: white;
         font-family: sans-serif;
@@ -15,56 +21,101 @@
       aside{
         cursor: pointer;
       }
+      @media screen and (max-width:320px) {
+        .banner{
+          height: 30vw;
+          width: 100vw;
+        }
+      }
+      
   
 
   </style>
   <body>
-    <header class=" bg-wing-primary ">
-      <div class="container max-w-[1024px] mx-auto px-4  header-content h-[50px] flex justify-between lg:justify-end p-2 items-center">
-        <aside class="left block lg:hidden">
-        <figure class="w-[135px] h-[48px]">
-          <img src="../../img/wing_logo.png" alt="">
-        </figure>
-      </aside>
-      <aside class="right flex gap-5 items-center">
-           <ul class=" gap-4 text-white hidden lg:flex">
-              <li><a href="">New</a></li>
-              <li><a href="">Promotion</a></li>
-              <li><a href="">Carrer</a></li>
-              <li><a href=""></a>About</li>
-              <li><a href="">CSR</a></li>
-           </ul>
+    <header class="  ">
+     <div class="header bg-wing-primary shadow-lg">
+         <div class="header-content !container max-w-[1024px] mx-auto px-4   h-[50px] flex justify-between lg:justify-end p-2 items-center ">
+            <aside class="left block lg:hidden">
+                  <figure class="w-[135px] h-[48px]">
+                    <img src="../../img/wing_logo.png" alt="">
+                  </figure>
+            </aside>
+            <aside class="right flex gap-5 items-center">
+                <ul class=" gap-4 text-white hidden lg:flex">
+                    <li><a class=" text-white " href="">New</a></li>
+                    <li><a class=" text-white " href="">Promotion</a></li>
+                    <li><a class=" text-white " href="">Carrer</a></li>
+                    <li><a class=" text-white " href=""></a>About</li>
+                    <li><a class=" text-white " href="">CSR</a></li>
+                </ul>
 
-           <!-- search-bar -->
-           <div class="search-bar hidden lg:block">
-            <div class="search-content group bg-white  rounded-md overflow-hidden flex items-center transition-all duration-300 p-1">
-              <input class="bg-transparent outline-none  w-0 group-hover:w-[150px] transition-all duration-300 text-slate-600" type="text" placeholder="Search">
-              <i class="bi bi-search text-black p-1 rounded-md cursor-pointer"></i>
-            </div>
-          </div>
+                <!-- search-bar -->
+                <div class="search-bar hidden lg:block">
+                  <div class="search-content group bg-white  rounded-md overflow-hidden flex items-center transition-all duration-300 p-1">
+                    <input class="bg-transparent outline-none  w-0 group-hover:w-[150px] transition-all duration-300 text-slate-600" type="text" placeholder="Search">
+                    <i class="bi bi-search text-black p-1 rounded-md cursor-pointer"></i>
+                  </div>
+                </div>
 
-          <!-- langues -->
-          <div class="khmer bg-white px-1 rounded-md h-[24px] flex items-center gap-1 py-4">
-            <div class="khmer-flag ">
-              <figure class="w-[20px] h-[13px]"><img  src="../../img/km-icon.png" alt=""></figure>
-            </div>
-            <div class="khmer-letter text-wing-blue">
-              ខ្មែរ
-            </div>
-          </div>
+                <!-- langues -->
+                <div class="khmer bg-white px-1 rounded-md h-[24px] flex items-center gap-1 py-4">
+                  <div class="khmer-flag ">
+                    <figure class="w-[20px] h-[13px]"><img  src="../../img/km-icon.png" alt=""></figure>
+                  </div>
+                  <div class="khmer-letter text-wing-blue">
+                    ខ្មែរ
+                  </div>
+                </div>
 
-          <!-- .internet banking -->
-           <div class="internet_btn bg-wing-blue rounded-md overflow-hidden">
-               <button class=" p-1   hover:bg-wing-blueSlate "><a class=" p-3" href="">Internet Banking</a></button>
-           </div>
+                <!-- .internet banking -->
+                <div class="internet_btn bg-wing-blue rounded-md overflow-hidden hidden md:flex ">
+                    <button class=" p-1   hover:bg-wing-blueSlate "><a class=" p-3" href="">Internet Banking</a></button>
+                </div>
 
-          <!-- list bar  -->
-           <div class="minu_bar block lg:hidden">
-               <i class="bi bi-list text-3xl"></i>
-           </div>
+                <!-- list bar  -->
+                <div class="minu_bar block lg:hidden">
+                    <i class="bi bi-list text-3xl"></i>
+                </div>
 
-      </aside>
-      </div>
+            </aside>
+         </div>
+     </div>
+     <nav>
+        <div class="navigation w-full h-[90px] bg-white lg:block hidden shadow-md">
+             <div class="nav-content p-2 max-w-[1024px] h-full  mx-auto flex items-center justify-between">
+                 <aside>
+                      <figure class="w-[200px]">
+                             <img src="../../img/wing-2.png" alt="">
+                    </figure>
+                 </aside>
+                 <aside class=" ">
+                  <ul class="flex gap-3">
+                    <li class="flex items-center gap-2"><a class="text-wing-gray font-bold" href="">PERSONAL</a><i class="fa-solid fa-chevron-down text-wing-blue"></i></li>
+                    <li class="flex items-center gap-2"><a class="text-wing-gray font-bold" href="">BUSINESS</a><i class="fa-solid fa-chevron-down text-wing-blue"></i></li>
+                    <li class="flex items-center gap-2"><a class="text-wing-gray font-bold" href="">WING BANK APP</a><i class="fa-solid fa-chevron-down text-wing-blue"></i></li>
+                    <li class="flex items-center gap-2"><a class="text-wing-gray font-bold" href="">SELF SEVICES</a> <i class="fa-solid fa-chevron-down text-wing-blue"></i></li>
+                    <li class="flex items-center gap-2"><a class="text-wing-gray font-bold" href="">SUPPORT </a><i class="fa-solid fa-chevron-down text-wing-blue"></i></li>
+                  </ul>
+                 </aside>
+             </div>
+        </div>
+     </nav>
     </header>
+    <main>
+      <div class="containerss">
+             <div class="banner flex  max321: h-[520px] md:w-[535px] md:h-[535px] lg:w-full mx-auto ">
+              
+                   <figure class="w-full relative">
+                        <div id="btn-left" class="btn absolute   flex items-center start-0 cursor-pointer h-full"><button class="p-4  h-fit"><i class="text-3xl font-bold bi bi-chevron-left"></i></button></div>
+                             <img id="img" class=" h-full w-auto object-cover" src="" alt="">
+                        <div id="btn-right" class="btn absolute  flex items-center end-0 top-0 cursor-pointer h-full"><button  class="p-4  h-fit"><i class="text-3xl font-bold bi bi-chevron-right"></i></button></div>    
+                    </figure>
+                            </div>
+      </div>
+    </main>
+   
+
+
   </body>
+  <script src="../js/script.js"></script>
 </html>
