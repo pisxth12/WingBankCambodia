@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100..900&display=swap');
+    a{
+      text-decoration: none;
+    }
+      body{
+        color: white;
+        font-family: sans-serif;
+      }
+      aside{
+        cursor: pointer;
+      }
+      @media screen and (max-width:320px) {
+        .banner{
+          height: 30vw;
+          width: 100vw;
+        }
+      }
+    
+        .boxs>h5{
+          padding: 10px 0;
+        }
+   .fontWidthlight,.copyright{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 340;
+    font-size: medium;
+   }
+   .piseth{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 340;
+    font-size: large;
+    overflow: hidden;
+    padding: 50px 0;
+
+
+    
+   }
+   .border-seth{
+    height: 1px ;
+    background-color: rgba(209, 209, 209, 0.799);
+   }
+  
+.khmer-letter{
+  font-family: "Hanuman", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.btn-read-more{
+   
+}
