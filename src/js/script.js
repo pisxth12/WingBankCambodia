@@ -18,14 +18,6 @@ next.addEventListener('click', function(){
     item = (item+1) % imgList.length;
     image.src = imgList[item];
 
-    if(!autoSlide){
-        autoSlide = true;
-        setInterval(()=> {
-            item = (item+1) % imgList.length;
-            image.src=imgList[item]
-        },5000);
-    }
-    
 })
 
 back.addEventListener('click', function(){
