@@ -1592,6 +1592,10 @@ video {
     justify-content: flex-start;
   }
 
+  .md\:text-start {
+    text-align: start;
+  }
+
   .md\:text-wing-title-md {
     font-size: 50px;
   }
